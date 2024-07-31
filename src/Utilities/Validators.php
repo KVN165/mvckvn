@@ -18,6 +18,14 @@ class Validators {
         return preg_match("/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,32}$/", $valor) && true;
     }
 
+    static public function IsCurrency($valor){
+        return preg_match("/^\d+(\.\d{1,2})?$/", $valor) && true;
+    }
+
+    static public function IsInteger($valor){
+        return preg_match("/^\d+$/", $valor) && true;
+    }
+
     private function __construct()
     {
         

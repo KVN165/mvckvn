@@ -20,6 +20,20 @@ CREATE TABLE
             `userest`
         )
     ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8;
+    /*
+usercod` codigo
+`useremail` email
+ `username` nombre
+`userpswd` contraseña
+`userfching` fecha de ingreso
+`userpswdest` estado de contraseña (bloqueado vencida vigente)
+ `userpswdexp fecha de expiracion
+`userest`usuario estado
+`useractcod` codigo de activacion (verificacion)
+`userpswdchg` fecha cambio contraseña
+`usertipo` tipo usuario
+
+    */
 
 CREATE TABLE
     `roles` (
